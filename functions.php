@@ -119,7 +119,7 @@ add_action( 'widgets_init', 'wpbox_widgets_init' );
 function wpbox_scripts() {
 
   wp_enqueue_style( 'tachyons', get_template_directory_uri() . '/assets/css/tachyons.min.css' );
-  
+
 	wp_enqueue_style( 'wpbox-style', get_stylesheet_uri() );
 
 	wp_enqueue_style( 'wpbox-style2', get_template_directory_uri() . '/wpbox.css' );
