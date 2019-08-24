@@ -12,6 +12,18 @@ Tags: one-column, two-columns, right-sidebar, flexible-header, accessibility-rea
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
+.w-33 {
+  width: 33%; }
+
+.w-34 {
+  width: 34%; }
+
+.w-65 {
+  width: 65%; }
+
+.w-75 {
+  width: 75%; }
+
 body,
 html {
   font-family: Lato, sans-serif;
