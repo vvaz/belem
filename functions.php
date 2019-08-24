@@ -81,7 +81,7 @@ function shapeSpace_include_custom_jquery() {
 	wp_enqueue_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js', array(), null, true);
 
 }
-add_action('wp_enqueue_scripts', 'shapeSpace_include_custom_jquery');
+// add_action('wp_enqueue_scripts', 'shapeSpace_include_custom_jquery');
 
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
@@ -126,7 +126,7 @@ function wpbox_scripts() {
 
 	wp_enqueue_script( 'wpbox-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
-	wp_enqueue_script( 'wpbox-custom-js', get_template_directory_uri() . '/js/custom.min.js', array(), '20151215', true );
+	wp_enqueue_script( 'wpbox-custom-js', get_template_directory_uri() . '/js/custom.min.js', array('jquery'), null, true);
 
 	wp_enqueue_script( 'wpbox-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 

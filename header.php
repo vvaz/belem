@@ -21,9 +21,9 @@
   <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
   <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
 
-  <script src="https://use.fontawesome.com/b9d228215f.js"></script>
+  <script src="https://kit.fontawesome.com/67e5f3640a.js"></script>
 
-	<?php wp_head(); ?>
+  <?php wp_head(); ?>
 </head>
 
 <!-- Begin Inspectlet Embed Code -->
@@ -54,7 +54,7 @@
       <?php else : ?>
           <hgroup>
               <h1 class='site-title'><a href='<?php echo esc_url( home_url( '/' ) ); ?>' title='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>' rel='home'><?php bloginfo( 'name' ); ?></a></h1>
-              <h2 class='site-description'><?php bloginfo( 'description' ); ?></h2>
+
           </hgroup>
       <?php endif; ?>
 
