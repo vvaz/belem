@@ -1,4 +1,4 @@
-<a class="fa fa-facebook social-icon" href="https://www.facebook.com/ofuturoemac/" target="_blank"></a>
+<a class="fab fa-facebook-f social-icon" href="https://www.facebook.com/ofuturoemac/" target="_blank"></a>
 
 <?php
 /*
