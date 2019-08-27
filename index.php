@@ -118,15 +118,15 @@ get_header(); ?>
 			<?php // newsletter ?>
 
         <?php
-/**
- * Detect plugin. For use on Front End only.
- */
-include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
+        /**
+         * Detect plugin. For use on Front End only.
+         */
+        include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
 
-// check for plugin using plugin name
-if ( is_plugin_active( 'wp-content/plugins/mailpoet.php' ) ) {
-  //plugin is activated
-?>
+        // check for plugin using plugin name
+        if ( is_plugin_active( 'wp-content/plugins/mailpoet.php' ) ) {
+        //plugin is activated
+        ?>
       <div class="cf newsletter">
         <div class="cf fl w-100 pa5 bg-problue newsletter-bg-bl">
           <div class="cf bg-near-white flex flex-newsletter">
@@ -147,9 +147,9 @@ if ( is_plugin_active( 'wp-content/plugins/mailpoet.php' ) ) {
           </div>
         </div>
       </div>
-			<?php // /newsletter ?>
 
     <?php } ?>
+	    <?php // /newsletter ?>
 
 			<?php // most shared ?>
       <div class="my-container-2 cf">
