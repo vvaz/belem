@@ -67,12 +67,16 @@
       </nav><!-- #site-navigation -->
     </div>
 
-    <div class="fl w-20 social-navbar-cont">
+    <div class="fl w-15">
+      <?php get_search_form(); ?>
+    </div>
+    <div class="fl w-5 social-navbar-cont">
+
       <div class="social-navbar tr hide-479">
 				<?php get_template_part( 'template-parts/content', 'sociallinks' ); ?>
       </div>
     </div>
-		<?php get_search_form(); ?>
+
   </header><!-- #masthead -->
 
   <div id="content" class="site-content cf">
