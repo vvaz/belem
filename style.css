@@ -5,7 +5,7 @@ Theme URI: https://wpbox.io
 Author: WPBox
 Author URI: https://wpbox.io
 Description: Belem is a Magazine theme for WordPress, with excellent use of typography and images space.
-Version: 0.1.1
+Version: 0.1.2
 License: GNU General Public License v2 or later
 GitHub Theme URI: vvaz/belem
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -14,6 +14,9 @@ Tags: one-column, two-columns, right-sidebar
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
+.w-15 {
+  width: 15%; }
+
 .w-33 {
   width: 33%; }
 
