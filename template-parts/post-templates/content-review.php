@@ -93,27 +93,42 @@
     </header><!-- .post-header -->
   </div>
 
-  <div class="w-100-wt w-100-wm w-75-ns">
+  <section class="post-content cf">
 
+    <div class="fl w-10-ns tr">
+      <div class="author">
 
-  <div class="entry-content pa3">
-    <?php
-    the_content( sprintf(
-    /* translators: %s: Name of current post. */
-      wp_kses( __( 'Continue reading %s <span class="meta-nav">&rarr;</span>', 'wpbox' ), array( 'span' => array( 'class' => array() ) ) ),
-      the_title( '<span class="screen-reader-text">"', '"</span>', false )
-    ) );
+        <div class="written-by">Escrito por:</div>
 
-    wp_link_pages( array(
-      'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'wpbox' ),
-      'after'  => '</div>',
-    ) );
-    ?>
-  </div><!-- .entry-content -->
+        <p class="author-name">
+          <a href="mailto:<?php echo get_the_author_meta( 'user_email'); ?>">
+            <?php the_author_meta( 'display_name'); ?>
+          </a>
+        </p>
+        <img class="author-thumbnail" src="<?php echo esc_url( get_avatar_url(get_the_author_meta('ID'))); ?>" />
+      </div>
+    </div>
 
-  <footer class="entry-footer">
-    <?php // wpbox_entry_footer(); ?>
-  </footer><!-- .entry-footer -->
+    <div class="fl w-100-wt w-100-wm w-75-ns">
+      <div class="entry-content pa3">
+        <?php
+        the_content( sprintf(
+        /* translators: %s: Name of current post. */
+          wp_kses( __( 'Continue reading %s <span class="meta-nav">&rarr;</span>', 'wpbox' ), array( 'span' => array( 'class' => array() ) ) ),
+          the_title( '<span class="screen-reader-text">"', '"</span>', false )
+        ) );
 
-  </div>
+        wp_link_pages( array(
+          'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'wpbox' ),
+          'after'  => '</div>',
+        ) );
+        ?>
+      </div><!-- .entry-content -->
+
+      <footer class="entry-footer">
+        <?php // wpbox_entry_footer(); ?>
+      </footer><!-- .entry-footer -->
+    </div>
+
+  </section>
 </article><!-- #post-## -->
