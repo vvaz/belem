@@ -288,3 +288,15 @@ class comment_walker extends Walker_Comment {
 		<?php }
 
 	}
+
+	/* comments cookie */
+
+function comment_form_change_cookies_consent( $fields ) {
+  $commenter = wp_get_current_commenter();
+  $consent   = empty( $commenter['comment_author_email'] ) ? '' : ' checked="checked"';
+  $fields['cookies'] = '<p class="comment-form-cookies-consent"><input id="wp-comment-cookies-consent" name="wp-comment-cookies-consent" type="checkbox" value="yes"' . $consent . ' />' .
+    '<label for="wp-comment-cookies-consent">Guardar o meu nome, email e website neste navegador para preencher automaticamente na próxima vez que comentar.</label></p>';
+  return $fields;
+}
+add_filter( 'comment_form_default_fields', 'comment_form_change_cookies_consent' );
+
