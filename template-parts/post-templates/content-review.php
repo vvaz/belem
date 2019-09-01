@@ -110,7 +110,7 @@
     </div>
 
     <div class="fl w-100-wt w-100-wm w-75-ns">
-      <div class="entry-content pa3">
+      <div class="entry-content pv3 ph5">
         <?php
         the_content( sprintf(
         /* translators: %s: Name of current post. */

@@ -1125,9 +1125,8 @@ nav#site-navigation ul {
   margin-bottom: 1.3rem; }
 
 .single .single-post-container .entry-content {
-  padding: 1.3rem;
-  font-size: 18px;
-  line-height: 26px;
+  font-size: 1.125rem;
+  line-height: 1.625rem;
   color: #748288;
   font-weight: 300; }
   .single .single-post-container .entry-content h4 {
